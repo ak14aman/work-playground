@@ -1,0 +1,38 @@
+.navbar {
+    background-color: #333; /* Navbar background color */
+    color: #fff; /* Text color */
+    padding: 10px; /* Padding around navbar items */
+    display: flex; /* Use flexbox */
+    justify-content: left; /* Distribute items evenly along the main axis */
+    align-items: center;
+  }
+
+  .ComponentDiv {
+    padding: 5px; /* Padding around navbar items */
+  }
+  
+  
+  .navbar ul {
+    list-style-type: none; /* Remove default list styles */
+    margin: 0;
+    padding: 0;
+  }
+  
+  .navbar li {
+    display: inline-block; /* Display navbar items horizontally */
+    margin-right: 20px; /* Space between navbar items */
+  }
+  
+  .navbar li:last-child {
+    margin-right: 0; /* Remove margin from the last navbar item */
+  }
+  
+  .navbar a {
+    color: #fff; /* Text color for navbar links */
+    text-decoration: none; /* Remove default underline from links */
+    font-size: 16px; /* Font size of navbar links */
+  }
+  
+  .navbar a:hover {
+    color: #ffa500; /* Change text color on hover */
+  }
