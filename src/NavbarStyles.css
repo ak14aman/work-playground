@@ -36,3 +36,9 @@
   .navbar a:hover {
     color: #ffa500; /* Change text color on hover */
   }
+
+  .navbar a.selected {
+    color: #ccff01; /* Change text color for selected item */
+    font-weight: bold; /* Make selected item bold */
+    /* Add any other styles you want for the selected item */
+  }
