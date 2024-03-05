@@ -13,6 +13,8 @@ import 'reactflow/dist/style.css';
 
 import './WorkFlowStyles.css'
 
+import TextUpdaterNode from './FormNode';
+
 const nodeTypes = {
   // selectorNode: ColorChangerNode,
   // newColorNode: ChangedNode,
@@ -22,10 +24,10 @@ const nodeTypes = {
 const initialNodes = [
   {
     id: '0',
-    type: 'input',
+    type: 'formNode',
     data: { label: 'Node' },
     position: { x: 0, y: 50 },
-  },
+  },  
 ];
 
 let id = 1;
@@ -80,6 +82,7 @@ const NodeWorkFlow = () => {
         const id = getId();
         const newNode = {
           id,
+          type: 'formNode',
           position: screenToFlowPosition({
             x: event.clientX,
             y: event.clientY,
@@ -121,6 +124,10 @@ const NodeWorkFlow = () => {
 
 export default () => (
   <ReactFlowProvider>
+    <div className='divElement'>
+        How to use, you ask? <br></br>
+        Create a new node by dropping the connection line on the pane from those purple boxes, and go with the flow :)
+    </div>
     <NodeWorkFlow />
   </ReactFlowProvider>
 );
