@@ -30,6 +30,10 @@ import MobileView from './MobileView';
                 {/* <Link to="/Component3">Component3</Link> */}
                 <Link to="/Component3" className={location.pathname === '/Component3' ? 'selected' : ''}>Component3</Link>
             </div>
+            <div className='ComponentDiv'>
+                {/* <Link to="/Component3">Component3</Link> */}
+                <Link to="/WhiteBoard" className={location.pathname === '/WhiteBoard' ? 'selected' : ''}>WhiteBoard</Link>
+            </div>
         </div>
     );
   };
