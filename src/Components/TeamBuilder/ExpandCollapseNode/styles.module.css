@@ -1,0 +1,71 @@
+.viewport {
+  background-color: rgb(241 245 249);
+}
+
+.node {
+  width: 180px;
+  background-color: #ffffff;
+  box-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
+  border-radius: 8px;
+  padding: 12px 15px;
+}
+
+.node :global .react-flow__handle {
+  visibility: hidden;
+}
+
+.label {
+  font-family: monospace;
+  font-size: 8px;
+  text-align: center;
+}
+
+.labelHeading {
+  font-family: monospace;
+  font-size: 12px;
+  text-align: center;
+  background-color: rgb(207, 83, 205);
+  font-weight: 700;
+}
+
+.button {
+  font-size: 9px;
+  font-family: monospace;
+  position: absolute;
+  bottom: -20px;
+  left: 50%;
+  transform: translate(-50%, 0);
+  width: 100px;
+  text-align: center;
+  color: rgb(148 163 184);
+  background-color: rgba(241, 245, 249, 0.5);
+}
+
+.button:hover {
+  color: rgb(71 85 105);
+}
+
+
+.customInputNode input{
+  width: 180px;
+  display: block;
+  border: 1px solid #ddd;
+  border-radius: 2.5px;
+  padding: 2px;
+  font-size: 11px;
+}
+
+.buttonSelector {
+  font-size: 9px;
+  font-family: monospace;
+  margin-right: 5px;
+  width: 50px;
+  transform: translate(70%, 0);
+  text-align: center;
+  color: rgb(139, 178, 232);
+  background-color: rgba(241, 245, 249, 0.5);
+}
+
+.buttonSelector:hover {
+  color: rgb(71 85 105);
+}

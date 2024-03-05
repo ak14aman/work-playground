@@ -7,6 +7,8 @@ import Component2 from './Components/testComp/Component2';
 import Component3 from './Components/testComp/Component3';
 import MobileView from './MobileView';
 import TldrawBoard from './Components/WhiteBoardTldraw/TldrawBoard';
+import ExpandCollapseNode from './Components/TeamBuilder/ExpandCollapseNode/App';
+import NodeWorkFlow from './Components/WorkFlow/NodeWorkFlow';
 
 function App() {
 
@@ -23,12 +25,11 @@ function App() {
     return () => {
       window.removeEventListener('resize', handleResize);
     };
-  }, []); // Empty dependency array means this effect runs once on mount and clean up on unmount
+  }, []);
 
   return (
     <>
       {/* {!isMobileView && <Navbar />} */}
-      {/* <TldrawBoard/> */}
       <Navbar />
         <div>
           <Routes>        
@@ -40,6 +41,8 @@ function App() {
               <Route path="/Component2" element={<Component2 />} />
               <Route path="/Component3" element={<Component3 />} />
               <Route path="/WhiteBoard" element={<TldrawBoard />} />
+              <Route path="/TeamBuilder" element={<ExpandCollapseNode />} />
+              <Route path="/WorkFlow" element={<NodeWorkFlow />} />
             </>
             )}
             
@@ -50,3 +53,11 @@ function App() {
 }
 
 export default App;
+
+// homepage
+// whiteboard ************************
+// team builder reactflow
+// workflow 
+// multiple to do lists (reactflow)
+// google calendar
+// task management

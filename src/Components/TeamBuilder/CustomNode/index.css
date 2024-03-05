@@ -1,0 +1,77 @@
+/* .react-flow__node-selectorNode {
+    height: 70px;
+    font-size: 10px;
+    background: #eee;
+    border: 1px solid #555;
+    padding: 5px;
+    border-radius: 5px;
+    text-align: center;
+  } */
+
+  .color-changer-node {
+    height: 50px;
+    font-size: 10px;
+    border: 1px solid #555;
+    padding: 5px;
+    border-radius: 5px;
+    background: #eee;
+    text-align: center;
+  }
+  
+  .new-color-node {
+    height: 140px;
+    width: 200px;
+    font-size: 10px;
+    border: 1px solid #555;
+    padding: 5px;
+    border-radius: 5px;
+    background: #eee;
+    text-align: center;
+  }
+
+  .new-color-node .video {
+    height: 100px;
+    width: auto;
+    padding-top: 3px;
+
+  }
+
+  .text-updater-node {
+    
+    /* height: auto;
+    width: auto; */
+    border: 1px solid #555;
+    padding: 5px;
+    border-radius: 5px;
+    background: white;
+  }
+  
+  .text-updater-node label {
+ 
+    font-size: 10px;
+    margin-bottom: 0px;
+    margin-top: 0px;
+  }
+
+  .text-updater-node .formTitle {
+    font-size: 11px;
+    font-weight: bold;
+  }
+
+  .text-updater-node input{
+    display: block;
+    border: 1px solid #ddd;
+    border-radius: 2.5px;
+    padding: 2px;
+    font-size: 8px;
+  }
+
+  .text-updater-node button {
+    border: 1px solid #000000;
+    background-color: #3148da;
+    color: #ffffff;
+    border-radius: 2.5px;
+    padding: 2px 10px 2px;
+    font-size: 8px;
+    margin: 5px 43px 5px;
+  }
