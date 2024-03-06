@@ -8,6 +8,14 @@
     text-align: center;
   } */
 
+/* @tailwind base;
+@tailwind components;
+@tailwind utilities; */
+
+  .no-tailwind { 
+    all: unset; 
+} 
+
   .color-changer-node {
     height: 50px;
     font-size: 10px;
@@ -75,4 +83,12 @@
     padding: 2px 10px 2px;
     font-size: 8px;
     margin: 5px 43px 5px;
+  }
+
+  #textInput {
+    display: block;
+    border: 1px solid #ddd;
+    border-radius: 2.5px;
+    padding: 2px;
+    font-size: 8px;
   }

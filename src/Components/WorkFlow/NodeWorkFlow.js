@@ -128,6 +128,6 @@ export default () => (
         How to use, you ask? <br></br>
         Create a new node by dropping the connection line on the pane from those purple boxes, and go with the flow :)
     </div>
-    <NodeWorkFlow />
+    <NodeWorkFlow/>
   </ReactFlowProvider>
 );

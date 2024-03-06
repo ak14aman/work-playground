@@ -42,6 +42,14 @@ import MobileView from './MobileView';
                 {/* <Link to="/Component3">Component3</Link> */}
                 <Link to="/WorkFlow" className={location.pathname === '/WorkFlow' ? 'selected' : ''}>Work-Flow</Link>
             </div>
+            <div className='ComponentDiv'>
+                {/* <Link to="/Component3">Component3</Link> */}
+                <Link to="/ToDoList" className={location.pathname === '/ToDoList' ? 'selected' : ''}>Multi-To-Dos</Link>
+            </div>
+            <div className='ComponentDiv'>
+                {/* <Link to="/Component3">Component3</Link> */}
+                <Link to="/Calendar" className={location.pathname === '/Calendar' ? 'selected' : ''}>Event-Calendar</Link>
+            </div>
         </div>
     );
   };

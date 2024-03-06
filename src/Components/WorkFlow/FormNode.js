@@ -13,9 +13,9 @@ function TextUpdaterNode({ data, isConnectable }) {
     <div className="text-updater-node">
       <Handle type="target" position={Position.Top} isConnectable={isConnectable} /> 
       {/* <div className='formTitle'>Basic Form inside a Node</div> */}
-      <div>
+      <div >
         <label htmlFor="text">Enter Work/Name:</label> 
-        <input id="text" name="text" onChange={onChange} className="nodrag" placeholder="Type here.." />
+        <input id="textInput" name="text" onChange={onChange} className="nodrag h-4 block text-sm font-medium leading-6 text-gray-900" placeholder="Type here.." />
       </div>
       <Handle type="source" position={Position.Bottom} id="a" isConnectable={isConnectable} />
     </div>

@@ -37,3 +37,6 @@
     position: absolute;
   }
   
+  .no-tailwind { 
+    all: unset; 
+} 

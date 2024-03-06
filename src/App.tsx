@@ -9,6 +9,8 @@ import MobileView from './MobileView';
 import TldrawBoard from './Components/WhiteBoardTldraw/TldrawBoard';
 import ExpandCollapseNode from './Components/TeamBuilder/ExpandCollapseNode/App';
 import NodeWorkFlow from './Components/WorkFlow/NodeWorkFlow';
+import IndexToDo from './Components/MultiToDo/IndexToDo';
+import IndexCalendar from './Components/CalendarEvents/IndexCalendar';
 
 function App() {
 
@@ -43,6 +45,8 @@ function App() {
               <Route path="/WhiteBoard" element={<TldrawBoard />} />
               <Route path="/TeamBuilder" element={<ExpandCollapseNode />} />
               <Route path="/WorkFlow" element={<NodeWorkFlow />} />
+              <Route path="/ToDoList" element={<IndexToDo />} />
+              <Route path="/Calendar" element={<IndexCalendar />} />
             </>
             )}
             
@@ -54,10 +58,11 @@ function App() {
 
 export default App;
 
-// homepage
-// whiteboard ************************
-// team builder reactflow
-// workflow 
-// multiple to do lists (reactflow)
-// google calendar
-// task management
+// @@ homepage
+// @@ whiteboard ************************
+// @@ team builder reactflow*******************
+// @@ workflow ********************
+// @@ multiple to do lists (reactflow)
+// @@ google calendar
+// @@ task management
+// @@ mobile view oops
