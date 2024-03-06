@@ -1,0 +1,103 @@
+@import url('https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&display=swap');
+
+
+/* .about-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .photo-container {
+    margin-right: 20px; 
+  }
+  
+  .photo {
+    width: 200px; 
+    height: 200px; 
+    border-radius: 50%;
+  }
+  
+  .content-container {
+    max-width: 400px; 
+  }
+  
+  .heading {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+  
+  .text {
+    font-size: 16px;
+    margin-bottom: 10px;
+  }
+   */
+
+
+
+
+
+
+   /* MyComponent.css */
+
+.component-container {
+    display: flex;
+    align-items: center;
+    position: relative;
+    padding: 3rem;
+    /* Add any other styles for the container */
+  }
+
+.hero-content {
+    flex: 2;
+    padding: 3rem;
+    margin-left: auto;
+    padding-left: 5rem;
+    /* Adjust padding and other styles for the content area */
+}
+
+.hero-heading {
+    font-size: 24px;
+    font-weight: 500;
+    font-family: 'Jost', sans-serif;
+    /* Adjust heading styles */
+}
+
+.hero-description {
+    font-size: 16px;
+    max-width: 600px;
+    font-family: 'Jost', sans-serif;
+    /* Adjust description styles */
+}
+
+  
+.hero-image-container {
+    /* flex: 2; */
+    display: flex;
+    flex-direction: column;
+    width: 40%;
+    align-items: left;
+    gap: 2rem;
+    /* padding-left: 200px; */
+    /* margin-left: 20px;  */
+    /* Adjust padding and other styles for the image container */
+}
+
+.hero-image-container > div {
+    display: flex;
+    align-items: flex-end;
+    /* gap: 2rem; */
+}
+
+.hero-image-container > div > img{
+    width: 20rem;
+    align-items: start;
+    transition: all 0.3s ease;
+}
+
+/* .image {
+    max-width: 300px;
+    height: auto;
+} */
+
+

@@ -2,9 +2,7 @@ import React, { useState, useEffect } from 'react';
 import './App.css';
 import { Route, Routes } from 'react-router-dom';
 import Navbar from './Navbar';
-import Component1 from './Components/testComp/Component1';
-import Component2 from './Components/testComp/Component2';
-import Component3 from './Components/testComp/Component3';
+import Homepage from './Components/HmepageComp/Homepage';
 import MobileView from './MobileView';
 import TldrawBoard from './Components/WhiteBoardTldraw/TldrawBoard';
 import ExpandCollapseNode from './Components/TeamBuilder/ExpandCollapseNode/App';
@@ -40,7 +38,7 @@ function App() {
             <Route path="/MobileView" element={<MobileView />} />
             ) : (
             <>
-              <Route path="/" element={<Component1/>} />
+              <Route path="/" element={<Homepage/>} />
               <Route path="/WhiteBoard" element={<TldrawBoard />} />
               <Route path="/TeamBuilder" element={<ExpandCollapseNode />} />
               <Route path="/WorkFlow" element={<NodeWorkFlow />} />
