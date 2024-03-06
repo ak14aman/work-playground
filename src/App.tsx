@@ -11,6 +11,7 @@ import ExpandCollapseNode from './Components/TeamBuilder/ExpandCollapseNode/App'
 import NodeWorkFlow from './Components/WorkFlow/NodeWorkFlow';
 import IndexToDo from './Components/MultiToDo/IndexToDo';
 import IndexCalendar from './Components/CalendarEvents/IndexCalendar';
+import TaskManager from './Components/TaskManagement/TaskManager';
 
 function App() {
 
@@ -47,6 +48,7 @@ function App() {
               <Route path="/WorkFlow" element={<NodeWorkFlow />} />
               <Route path="/ToDoList" element={<IndexToDo />} />
               <Route path="/Calendar" element={<IndexCalendar />} />
+              <Route path="/TaskManager" element={<TaskManager />} />
             </>
             )}
             
@@ -60,9 +62,9 @@ export default App;
 
 // @@ homepage
 // @@ whiteboard ************************
-// @@ team builder reactflow*******************
+// @@ team builder reactflow
 // @@ workflow ********************
 // @@ multiple to do lists (reactflow)
-// @@ google calendar
+// @@ google calendar *******************
 // @@ task management
 // @@ mobile view oops
