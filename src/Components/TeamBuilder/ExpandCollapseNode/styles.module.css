@@ -3,7 +3,7 @@
 }
 
 .node {
-  width: 180px;
+  width: 150px;
   background-color: #ffffff;
   box-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
   border-radius: 8px;
@@ -16,15 +16,15 @@
 
 .label {
   font-family: monospace;
-  font-size: 8px;
+  font-size: 7px;
   text-align: center;
 }
 
 .labelHeading {
   font-family: monospace;
-  font-size: 12px;
+  font-size: 10px;
   text-align: center;
-  background-color: rgb(207, 83, 205);
+  background-color: rgb(208, 101, 206);
   font-weight: 700;
 }
 

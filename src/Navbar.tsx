@@ -20,16 +20,8 @@ import MobileView from './MobileView';
         <div className='navbar'>
             <div className='ComponentDiv'>
                 {/* <Link to="/">Component1</Link> */}
-                <Link to="/" className={location.pathname === '/' ? 'selected' : ''}>Component1</Link>
-            </div>
-            <div className='ComponentDiv'>
-                {/* <Link to="/Component2">Component2</Link> */}
-                <Link to="/Component2" className={location.pathname === '/Component2' ? 'selected' : ''}>Component2</Link>
-            </div>
-            <div className='ComponentDiv'>
-                {/* <Link to="/Component3">Component3</Link> */}
-                <Link to="/Component3" className={location.pathname === '/Component3' ? 'selected' : ''}>Component3</Link>
-            </div>
+                <Link to="/" className={location.pathname === '/' ? 'selected' : ''}>Home</Link>
+            </div>            
             <div className='ComponentDiv'>
                 {/* <Link to="/Component3">Component3</Link> */}
                 <Link to="/WhiteBoard" className={location.pathname === '/WhiteBoard' ? 'selected' : ''}>WhiteBoard</Link>

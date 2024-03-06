@@ -1,0 +1,206 @@
+.viewport {
+  background-color: rgb(241 245 249);
+}
+
+.node {
+  font-family: Roboto,Arial,Tahoma,Verdana,sans-serif!important;
+  white-space: nowrap;
+  width: 150px;
+  /* height: auto; */
+  background-color: #ffffff;
+  box-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
+  /* border-radius: 8px; */
+  padding: 4px 12px;
+  cursor: pointer;
+}
+
+.layerNode {
+  font-family: Roboto,Arial,Tahoma,Verdana,sans-serif!important;
+  white-space: nowrap;
+  width: 150px;
+  /* height: auto; */
+  background-color: #ffffff;
+  box-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
+  /* border-radius: 8px; */
+  padding: 4px 12px;
+  cursor: pointer;
+}
+
+.serverNode {
+  font-family: Roboto,Arial,Tahoma,Verdana,sans-serif!important;
+  white-space: nowrap;
+  width: 180px;
+  /* height: auto; */
+  background-color: #ffffff;
+  box-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
+  /* border-radius: 8px; */
+  padding: 4px 8px;
+  cursor: pointer;
+}
+
+.node :global .react-flow__handle {
+  visibility: hidden;
+}
+
+.layerNode :global .react-flow__handle {
+  visibility: hidden;
+}
+
+.serverNode :global .react-flow__handle {
+  visibility: hidden;
+}
+
+.label {
+  font-family: Roboto,Arial,Tahoma,Verdana,sans-serif!important;
+  white-space: nowrap;
+  color: grey;
+  font-size: 6px;
+  text-align: center;
+}
+
+.labelHeading {
+  /* font-family: monospace;
+  font-size: 12px;
+  text-align: center;
+  background-color: #0072C5;
+  font-weight: 700;
+  color: #ffffff; */
+
+  background-color: #fff;
+  color: #0072c5;
+  cursor: pointer;
+  /* padding: 8px; */
+  width: 100%;
+  border: 0 solid #0072c5;
+  text-align: center;
+  font-weight: 500;
+  outline: 0;
+  font-size: 9px;
+}
+
+.headerNode {
+  /* font-family: monospace;
+  font-size: 17px;
+  text-align: center;
+  background-color: #0072C5;
+  color: #ffffff;
+  font-weight: 700; */
+
+  background-color: #fff;
+  color: #0072c5;
+  cursor: pointer;
+  /* padding: 8px; */
+  width: 100%;
+  border: 0 solid #0072c5;
+  text-align: center;
+  outline: 0;
+  font-weight: 500;
+  font-size: 9px;
+}
+
+.serverHeading {
+  /* font-family: monospace;
+  font-size: 10px;
+  text-align: center;
+  background-color: #0072C5;
+  color: #ffffff;
+  font-weight: 500; */
+
+  background-color: #fff;
+  color: #0072c5;
+  cursor: pointer;
+  /* padding: 8px; */
+  width: 100%;
+  border: 0 solid #0072c5;
+  text-align: center;
+  outline: 0;
+  font-size: 9px;
+}
+
+.serverDNSname {
+  font-size: 9px;
+  text-align: center;
+  font-weight: 500;
+}
+
+.serverNode button {
+  /* font-family: monospace;
+  border: 1px solid #000000;
+  background-color: rgb(133, 196, 225);
+  color: #000000;
+  border-radius: 2px;
+  padding: 1px 4px 1px; */
+
+  font-family: Roboto,Arial,Tahoma,Verdana,sans-serif!important;
+  white-space: nowrap;
+
+  font-size: 8px;
+  margin: 1px 4px 1px;
+
+  text-decoration: none;
+  color: #0072c5;
+  /* font-size: 13px; */
+  max-height: 90px;
+  overflow: hidden;
+  padding-left: 5px;
+  margin-top: 5px;
+  width: auto;
+  background: #f8f8f9;
+  text-align: center;
+  border-radius: 1px;
+  font-weight: 400;
+  border: 0.5px solid #0072c5;
+  padding-right: 5px;
+  /* float: right; */
+}
+
+.serverNode button:hover {
+  /* filter: brightness(0.9); */
+  color: rgb(87, 87, 88);
+  border: 1px solid rgb(87, 87, 88);
+}
+
+
+.nodeAttributes{
+  margin: 0px;
+  padding: 0px; 
+  margin-bottom: 5px;
+  text-align:center;
+  /* background-color: aqua; */
+}
+
+.nodeAttributes > h5{
+  /* margin: 0px 2px;
+  padding: 2px;
+  font-size:medium;
+  background-color:#749BC2; */
+  margin: 0px 2px;
+  font-family: monospace;
+  font-size: 17px;
+  text-align: center;
+  background-color: #0072C5;
+  font-weight: 800;
+}
+
+.Buttons{
+  /* margin: 10px; */
+  padding: 10px;
+  background-color: #6156ae;
+  display: flex;
+  gap: 20px;
+}
+
+.Buttons .state{
+  /* margin: 10px; */
+  background-color: #ec0e0e;
+  color: white;
+}
+
+.node3 {
+  width: 290px;
+  height: auto;
+  background-color: #ffffff;
+  box-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
+  border-radius: 8px;
+  padding: 12px 15px;
+}

@@ -43,80 +43,6 @@ type ExpandCollapseExampleProps = {
 
 
 
-const frameInfo = window.frameElement as HTMLElement;
-let clientid = frameInfo.dataset.clientid;
-const myWindow: any = window;
-console.log("@@@@@@    my Window : ", myWindow.top.botStore);
-let client = myWindow.top.botStore.getClientByID(clientid);
-console.log("@@@@@@    Got data for client initial element: ", client);
-
-let currentContext = JSON.parse(client.CurrentContext);
-console.log("@@@@@@    Got data for client initial element: ", currentContext);
-
-
-let paramsProduction = {
-  clientId: client.Client,
-  componentId: "_FFFFFFFFFFFFFF00001574767637917007_",
-  containerId: "_FFFFFFFFFFFFFF00001531753807448010_",
-  command: "RegisterLBS",
-  data: currentContext,
-  Type: "Api",
-};
-
-myWindow.top.BotServices.callComponent(
-  paramsProduction,
-  (err: any, res: any) => {
-    if (res) {
-      console.log("@@@@@@    Got RegisterLBS result", res);
-    } else {
-      console.log("@@@@@@    Got RegisterLBS error", err);
-    }
-  }
-);
-
-let paramsStaging = {
-  clientId: client.Client,
-  componentId: "_FFFFFFFFFFFFFF00001574767637922004_",
-  containerId: "_FFFFFFFFFFFFFF00001531753807448010_",
-  command: "RegisterLBS",
-  data: currentContext,
-  Type: "Api",
-};
-
-myWindow.top.BotServices.callComponent(paramsStaging, (err: any, res: any) => {
-  if (res) {
-    console.log("@@@@@@    Got RegisterLBS result", res);
-  } else {
-    console.log("@@@@@@    Got RegisterLBS error", err);
-  }
-});
-
-let paramsTesting = {
-  clientId: client.Client,
-  componentId: "_FFFFFFFFFFFFFF00001572936889256006_",
-  containerId: "_FFFFFFFFFFFFFF00001531753807448010_",
-  command: "RegisterLBS",
-  data: currentContext,
-  Type: "Api",
-};
-
-myWindow.top.BotServices.callComponent(paramsTesting, (err: any, res: any) => {
-  if (res) {
-    console.log("@@@@@@    Got RegisterLBS result", res);
-  } else {
-    console.log("@@@@@@    Got RegisterLBS error", err);
-  }
-});
-
-
-
-
-
-
-
-
-
-
 function ReactFlowPro({ treeWidth = 220, treeHeight = 100, animationDuration = 300 }: ExpandCollapseExampleProps = {}) {
 
   const [layer2Node, setLayer2Node] = useState<any[]>([]);
@@ -124,7 +50,7 @@ function ReactFlowPro({ treeWidth = 220, treeHeight = 100, animationDuration = 3
 
 
 
-  const setServerNodes = ( layer2: any [] ) => {
+  const setServerNodes = ( layer2: any [] ) => {  //layer2Node is passed here
 
     setNodes((cNode)=> {
 
@@ -137,7 +63,7 @@ function ReactFlowPro({ treeWidth = 220, treeHeight = 100, animationDuration = 3
               const newNode= {
               id: node3.ServerOID,
               type: "layer3Node", 
-              data: { nodeName: node3.DisplayName, layer: 'server', layerID: node2.id, expanded: false },
+              data: { nodeName: node3.DisplayName, layer: 'server', layerID: node2.id, serverData: node3, expanded: false },
               position: { x: 0, y: 0 },
             }
 
@@ -296,44 +222,7 @@ function ReactFlowPro({ treeWidth = 220, treeHeight = 100, animationDuration = 3
 
   }, [server3Nodes])
 
-  useEffect(() => {
 
-    const fetchData = async () => {
-      try {
-        await myWindow.top.BotServices.addClientCommand(
-          { Client: client.Client, Command: "UpdateServerstatus" },
-          (result:any, err:any) => {
-            if (result) {
-              console.log("@@@@@@    UpdateServerstatus result", result);
-              console.log("$$$$$$$$$$       Testing API data result.ServerOID         $$$$$$$$$");
-              console.log(result.ServerOID);
-              
-              if(result && result.ServerOID && result.LBSetID)
-                // pushUnique(result);
-              {
-                setLayer2Node((layerNodes) => {
-                  let index = layerNodes.findIndex((lnodes) => lnodes.ServerOID == result.ServerOID);
-                  if(index == -1) {
-                    return [...layerNodes, result];
-                  } else {
-                    return layerNodes;
-                  }
-                });
-              }
-            } else {
-              console.log("@@@@@@    UpdateServerstatus error", err);
-            }
-          }
-        );
-    
-      } catch (err) {
-        console.error(err);
-      }
-    };
-    
-    fetchData();
-
-  }, []); // gets called only once
 
 //   const rootNode ={
 //     id: 'rootNode',
@@ -481,8 +370,8 @@ function ReactFlowPro({ treeWidth = 220, treeHeight = 100, animationDuration = 3
       zoomOnDoubleClick={false}
       elementsSelectable={false}
     >
-      <Background />
-      <MiniMap />
+      <Background color="#ffffff"/>
+      {/* <MiniMap /> */}
       <Controls></Controls>
     </ReactFlow>
   );

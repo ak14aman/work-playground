@@ -47,16 +47,22 @@ export default function CustomNode({ data, id, xPos, yPos }: NodeProps) {
   const label = getLabel(data);
   const [isPopupVisible, setPopupVisible] = useState(false);
 
-  const handleLaunchClick = (action: any) => {
-    console.log(`>>>>>>    LAUNCHED ${action} server    <<<<<<`);
+  const handleLaunchClick = (serverName: any, serverData: any) => {
+    console.log(`>>>>>>    LAUNCHED ${serverName} server    <<<<<<`);
+
+    console.log("Server Data for the node you clicked",serverData);
   };
 
-  const handleTerminateClick = (action: any) => {
-    console.log(`>>>>>>    TERMINATED ${action} server    <<<<<<`);
+  const handleTerminateClick = (serverName: any, serverData: any) => {
+    console.log(`>>>>>>    TERMINATED ${serverName} server    <<<<<<`);
+
+    console.log("Server Data for the node you clicked",serverData);
   };
 
-  const handleRelaunchClick = (action: any) => {
-    console.log(`>>>>>>    RE-LAUNCHED ${action} server    <<<<<<`);
+  const handleRelaunchClick = (serverName: any, serverData: any) => {
+    console.log(`>>>>>>    RE-LAUNCHED ${serverName} server    <<<<<<`);
+
+    console.log("Server Data for the node you clicked",serverData);
   };
 
   // const togglePopup = () => {
@@ -64,13 +70,25 @@ export default function CustomNode({ data, id, xPos, yPos }: NodeProps) {
   // };
 
   const nodeName: any = data.nodeName;
+  const nodeServerData: any = data.serverData;
   // const nodeName: any = "Dummy server";
   // console.log("##### Nodename value: ", nodeName);
 
+  var borderColor: any;
+  if(nodeServerData.InstanceStatus=="down"){
+    borderColor = "red";
+  }
+  else if(nodeServerData.InstanceStatus=="running"){
+    borderColor = "green";
+  }
+  else{
+    borderColor = "orange";
+  }
+
 
   return (
-    <div className={styles.serverNode}>
-      <div className={styles.serverHeading}> <strong>PublicDnsName:</strong> 
+    <div className={styles.serverNode} style={{ border: `2px solid ${borderColor}` }}>
+      <div className={styles.serverHeading}> 
       <div className={styles.serverDNSname}>{data.nodeName}</div>
       </div>
       
@@ -78,14 +96,14 @@ export default function CustomNode({ data, id, xPos, yPos }: NodeProps) {
       
         {/* <p style={{margin:0, padding:0, fontSize:'10px'}}> Click for More</p> */}
         <div>
-        <button className={styles.launch} style={{backgroundColor: '#11c914'}}
-        onClick={() => handleLaunchClick(nodeName)}> Launch </button>
+        <button className={styles.launch} 
+        onClick={() => handleLaunchClick(nodeName, nodeServerData)}> Launch </button>
 
-        <button className={styles.terminate} style={{backgroundColor: 'red'}}
-        onClick={() => handleTerminateClick(nodeName)}> Terminate </button>
+        <button className={styles.terminate}
+        onClick={() => handleTerminateClick(nodeName, nodeServerData)}> Terminate </button>
 
-        <button className={styles.reLaunch} style={{backgroundColor: 'rgb(27, 170, 213)'}}
-        onClick={() => handleRelaunchClick(nodeName)}> Re-Launch </button>
+        <button className={styles.reLaunch}
+        onClick={() => handleRelaunchClick(nodeName, nodeServerData)}> Re-Launch </button>
 
         </div>
       {/* <div>

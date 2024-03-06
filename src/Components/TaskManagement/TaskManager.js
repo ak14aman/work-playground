@@ -21,7 +21,7 @@ import {
   useQuery,
   useQueryClient,
 } from '@tanstack/react-query';
-import { fakeData, usStates } from './makeData';
+import { fakeData } from './makeData';
 import EditIcon from '@mui/icons-material/Edit';
 import DeleteIcon from '@mui/icons-material/Delete';
 
@@ -31,14 +31,16 @@ const Example = () => {
   const columns = useMemo(
     () => [
       {
+        hidden: true,
         accessorKey: 'id',
         header: 'Id',
         enableEditing: false,
-        size: 80,
+        size: 30,
+        
       },
       {
         accessorKey: 'firstName',
-        header: 'First Name',
+        header: 'Name',
         muiEditTextFieldProps: {
           required: true,
           error: !!validationErrors?.firstName,
@@ -51,22 +53,23 @@ const Example = () => {
             }),
           //optionally add validation checking for onBlur or onChange
         },
+        size: 80,
       },
-      {
-        accessorKey: 'lastName',
-        header: 'Last Name',
-        muiEditTextFieldProps: {
-          required: true,
-          error: !!validationErrors?.lastName,
-          helperText: validationErrors?.lastName,
-          //remove any previous validation errors when user focuses on the input
-          onFocus: () =>
-            setValidationErrors({
-              ...validationErrors,
-              lastName: undefined,
-            }),
-        },
-      },
+      // {
+      //   accessorKey: 'lastName',
+      //   header: 'Last Name',
+      //   muiEditTextFieldProps: {
+      //     required: true,
+      //     error: !!validationErrors?.lastName,
+      //     helperText: validationErrors?.lastName,
+      //     //remove any previous validation errors when user focuses on the input
+      //     onFocus: () =>
+      //       setValidationErrors({
+      //         ...validationErrors,
+      //         lastName: undefined,
+      //       }),
+      //   },
+      // },
       {
         accessorKey: 'email',
         header: 'Email',
@@ -82,18 +85,67 @@ const Example = () => {
               email: undefined,
             }),
         },
+        size: 80,
       },
       {
-        accessorKey: 'state',
-        header: 'State',
-        editVariant: 'select',
-        editSelectOptions: usStates,
+        accessorKey: 'task',
+        header: 'Task',
         muiEditTextFieldProps: {
-          select: true,
-          error: !!validationErrors?.state,
-          helperText: validationErrors?.state,
+          // type: 'email',
+          required: true,
+          error: !!validationErrors?.task,
+          helperText: validationErrors?.task,
+          //remove any previous validation errors when user focuses on the input
+          onFocus: () =>
+            setValidationErrors({
+              ...validationErrors,
+              task: undefined,
+            }),
         },
       },
+    //   {
+    //     accessorKey: 'task',
+    //     header: 'Task',
+    //     muiEditTextFieldProps: {
+    //       required: true,
+    //       error: !!validationErrors?.task,
+    //       helperText: validationErrors?.task,
+    //       //remove any previous validation errors when user focuses on the input
+    //       onFocus: () =>
+    //         setValidationErrors({
+    //           ...validationErrors,
+    //           task: undefined,
+    //         }),
+    //       //optionally add validation checking for onBlur or onChange
+    //     },
+    //   },
+      {
+      accessorKey: 'deadline',
+      header: 'Deadline',
+      muiEditTextFieldProps: {
+        required: true,
+        error: !!validationErrors?.deadline,
+        helperText: validationErrors?.deadline,
+        //remove any previous validation errors when user focuses on the input
+        onFocus: () =>
+          setValidationErrors({
+            ...validationErrors,
+            deadline: undefined,
+          }),
+        //optionally add validation checking for onBlur or onChange
+      },
+    },
+      // {
+      //   accessorKey: 'state',
+      //   header: 'State',
+      //   editVariant: 'select',
+      //   editSelectOptions: usStates,
+      //   muiEditTextFieldProps: {
+      //     select: true,
+      //     error: !!validationErrors?.state,
+      //     helperText: validationErrors?.state,
+      //   },
+      // },
     ],
     [validationErrors],
   );
@@ -141,7 +193,7 @@ const Example = () => {
 
   //DELETE action
   const openDeleteConfirmModal = (row) => {
-    if (window.confirm('Are you sure you want to delete this user?')) {
+    if (window.confirm('Are you sure you want to delete this task?')) {
       deleteUser(row.original.id);
     }
   };
@@ -171,7 +223,7 @@ const Example = () => {
     //optionally customize modal content
     renderCreateRowDialogContent: ({ table, row, internalEditComponents }) => (
       <>
-        <DialogTitle variant="h3">Create New User</DialogTitle>
+        <DialogTitle variant="h3">Add New Task</DialogTitle>
         <DialogContent
           sx={{ display: 'flex', flexDirection: 'column', gap: '1rem' }}
         >
@@ -223,7 +275,7 @@ const Example = () => {
           // );
         }}
       >
-        Create New User
+        Create New Task
       </Button>
     ),
     state: {
@@ -336,10 +388,12 @@ const validateEmail = (email) =>
 function validateUser(user) {
   return {
     firstName: !validateRequired(user.firstName)
-      ? 'First Name is Required'
+      ? 'Name is Required'
       : '',
-    lastName: !validateRequired(user.lastName) ? 'Last Name is Required' : '',
+    // lastName: !validateRequired(user.lastName) ? 'Last Name is Required' : '',
     email: !validateEmail(user.email) ? 'Incorrect Email Format' : '',
+    task: !validateRequired(user.task) ? 'Task details is Required' : '',
+    deadline: !validateRequired(user.deadline) ? 'Deadline is Required' : '',
   };
 }
 

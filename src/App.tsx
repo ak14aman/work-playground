@@ -41,8 +41,6 @@ function App() {
             ) : (
             <>
               <Route path="/" element={<Component1/>} />
-              <Route path="/Component2" element={<Component2 />} />
-              <Route path="/Component3" element={<Component3 />} />
               <Route path="/WhiteBoard" element={<TldrawBoard />} />
               <Route path="/TeamBuilder" element={<ExpandCollapseNode />} />
               <Route path="/WorkFlow" element={<NodeWorkFlow />} />
