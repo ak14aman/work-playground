@@ -26,7 +26,7 @@ const IndexCalendar = () => {
       <iframe
       src="https://google-calendar-clone.netlify.app/"
       title="Hosted React App"
-      style={{ width: '100%', height: editorHeight }}
+      style={{ width: '100vw', height: '90vh' }}
     />
 
     </div>

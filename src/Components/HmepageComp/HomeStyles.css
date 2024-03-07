@@ -40,6 +40,7 @@
 
    /* MyComponent.css */
 
+/* HERO CONTAINERS */
 .component-container {
     display: flex;
     align-items: center;
@@ -101,3 +102,80 @@
 } */
 
 
+/* SUB-HEADINGS */
+.subheading-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    padding: 3rem;
+    color: #02419f;
+    /* Add any other styles for the container */
+  }
+.subheading {
+    font-size: 38px;
+    font-weight: 500;
+    font-family: 'Jost', sans-serif;
+    /* text-shadow: 1px 3px 15px rgba(0, 0, 0, 0.15); */
+    /* align-items: center; */
+}
+
+
+
+/* SUB CONTAINERS */
+.sub-container {
+    display: flex;
+    align-items: center;
+    position: relative;
+    padding: 0 3rem; /* 0 for top and bottom, 3rem for left and right */
+    /* Add any other styles for the container */
+  }
+
+.sub-content {
+    flex: 2;
+    padding: 2rem;
+    margin-left: auto;    
+    /* padding-left: 5rem; */
+    /* Adjust padding and other styles for the content area */
+}
+
+.sub-heading {
+    font-size: 35px;
+    font-weight: 500;
+    font-family: 'Jost', sans-serif;
+    /* Adjust heading styles */
+}
+
+.sub-description {
+    font-size: 17px;
+    max-width: 600px;
+    font-family: 'Jost', sans-serif;
+    color: #02419f;
+    /* Adjust description styles */
+}
+
+  
+.sub-image-container {
+    /* flex: 2; */
+    display: flex;
+    flex-direction: column;
+    width: 40%;
+    gap: 2rem;
+    /* padding-left: 200px; */
+    /* margin-left: 20px;  */
+    /* Adjust padding and other styles for the image container */
+}
+
+.sub-image-container > div {
+    display: flex;
+    align-items: start;
+    justify-content: center;
+    /* gap: 2rem; */
+}
+
+.sub-image-container > div > img{
+    height: 22rem;
+    align-items: end;
+    justify-content: end;
+    transition: all 0.3s ease;
+}

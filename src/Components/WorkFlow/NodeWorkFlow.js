@@ -101,7 +101,7 @@ const NodeWorkFlow = () => {
   );
 
   return (
-    <div className="wrapper" ref={reactFlowWrapper} style={{ maxWidth: '100%', height: editorHeight }}>
+    <div className="wrapper" ref={reactFlowWrapper} style={{ width: '100%', height: editorHeight }}>
       <ReactFlow
         nodes={nodes}
         edges={edges}

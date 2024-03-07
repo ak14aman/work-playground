@@ -370,7 +370,7 @@ const queryClient = new QueryClient();
 const TaskManager = () => (
   //Put this with your other react-query providers near root of your app
   <QueryClientProvider client={queryClient}>
-    <Example />
+    <Example style={{ width: '100%', height: '93vh' }}/>
   </QueryClientProvider>
 );
 
