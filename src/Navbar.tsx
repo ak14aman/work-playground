@@ -1,16 +1,7 @@
 import React from 'react'
 import { Link, useLocation } from 'react-router-dom';
 import './NavbarStyles.css';
-import MobileView from './MobileView';
-
-
-// const MobileView = () => {
-//     return (
-//       <div className='desktop-warning'>
-//         Kindly open in desktop!
-//       </div>
-//     );
-//   };
+import MobileView from './Components/HmepageComp/MobileView';
 
 
   const DesktopView = () => {

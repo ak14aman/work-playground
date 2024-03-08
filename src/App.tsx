@@ -3,7 +3,7 @@ import './App.css';
 import { Route, Routes } from 'react-router-dom';
 import Navbar from './Navbar';
 import Homepage from './Components/HmepageComp/Homepage';
-import MobileView from './MobileView';
+import MobileView from './Components/HmepageComp/MobileView';
 import TldrawBoard from './Components/WhiteBoardTldraw/TldrawBoard';
 import ExpandCollapseNode from './Components/TeamBuilder/ExpandCollapseNode/App';
 import NodeWorkFlow from './Components/WorkFlow/NodeWorkFlow';

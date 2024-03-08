@@ -219,7 +219,7 @@ const Homepage = () => {
          </div>
          
 
-         <div className='foot-end'>Copyright ©️ {dayjs().format('YYYY')} Developed in a hurry by &nbsp;  
+         <div className='foot-end'>Copyright ©️ {dayjs().format('YYYY')} Developed in a hurry by&nbsp;  
          <a className='userhandle' href="https://ak14aman.vercel.app/">@ak14aman</a>  
         </div>
         <div className='foot-end'>All Rights Reserved.</div>
