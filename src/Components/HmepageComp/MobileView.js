@@ -51,15 +51,196 @@ const MobileView = () => {
         </p>
       </div>
 
-      {/* <div className="m-hero-image-container">
-        <div>
-            <img
-            src={playgroundimg}
-            alt="Your Image"
-            className="image"
-            />
+    </div>
+
+
+    {/* SUB HEADING */}
+    <div className='m-subheading-container'>
+        <div className='m-subheading'>So, what all do you get?</div>
+    </div>
+
+
+    {/* SUB CONTAINER Whiteboard */}
+    <div className="m-sub-container">   
+
+      <div className="m-sub-content">
+        <h2 className="m-sub-heading">1. Interactive Whiteboard</h2>
+        <p className="m-sub-description">
+          A digital canvas designed for real-time brainstorming and ideation. Engage your team in dynamic discussions, 
+          visualize concepts, and capture ideas effortlessly, fostering innovation and driving productivity to new heights.
+        </p>
+      </div> 
+
+      <div className='m-subimgcentercontainer'>
+      <div className="m-sub-image-container">
+            <div>
+                <img
+                src={whiteboard}
+                alt="Your Image"
+                className="image"
+                />
+            </div>
+        </div>   
+        </div> 
+
+    </div>
+
+
+    {/* SUB CONTAINER Workflow */}
+    <div className="m-sub-container">   
+
+      <div className="m-sub-content">
+        <h2 className="m-sub-heading">2. WorkFlow Builder</h2>
+        <p className="m-sub-description">
+        Create custom workflows tailored to your specific needs, streamline operations, 
+        and ensure consistency and efficiency across your entire organization, all from one intuitive interface.
+        </p>
+      </div> 
+
+      <div className='m-subimgcentercontainer'>
+      <div className="m-sub-image-container">
+            <div>
+                <img
+                src={workflow}
+                alt="Your Image"
+                className="image"
+                />
+            </div>
+        </div>   
+        </div> 
+
+    </div>
+
+
+    {/* SUB CONTAINER teambuilder */}
+    <div className="m-sub-container">   
+
+      <div className="m-sub-content">
+        <h2 className="m-sub-heading">3. Team Builder</h2>
+        <p className="m-sub-description">
+        Build and strategically organize your go-to team within the organization, creating a 
+        dynamic hierarchy structure for optimizing human resource utilization and productivity.
+        </p>
+      </div> 
+
+      <div className='m-subimgcentercontainer'>
+      <div className="m-sub-image-container">
+            <div>
+                <img
+                src={teambuilder}
+                alt="Your Image"
+                className="image"
+                />
+            </div>
+        </div>   
+        </div> 
+
+    </div>
+
+
+    {/* SUB CONTAINER taskmanagement */}
+    <div className="m-sub-container">   
+
+      <div className="m-sub-content">
+        <h2 className="m-sub-heading">4. Task Manager</h2>
+        <p className="m-sub-description">
+        A centralized hub for organizing, prioritizing, and tracking assignments. Stay on top of deadlines,
+        monitor progress, and collaborate seamlessly with team members, amplifying performance.
+        </p>
+      </div> 
+
+      <div className='m-subimgcentercontainer'>
+      <div className="m-sub-image-container">
+            <div>
+                <img
+                src={taskmanagement}
+                alt="Your Image"
+                className="image"
+                />
+            </div>
+        </div>   
+        </div> 
+
+    </div>
+
+
+    {/* SUB CONTAINER calendar */}
+    <div className="m-sub-container">   
+
+      <div className="m-sub-content">
+        <h2 className="m-sub-heading">5. Event Calendar</h2>
+        <p className="m-sub-description">
+        Stay organized and informed with our Event Calendar, your go-to tool for managing important 
+        dates and events. Plan meetings, schedule deadlines, and coordinate team activities effortlessly.
+        </p>
+      </div> 
+
+      <div className='m-subimgcentercontainer'>
+      <div className="m-sub-image-container">
+            <div>
+                <img
+                src={calendar}
+                alt="Your Image"
+                className="image"
+                />
+            </div>
+        </div>   
+        </div> 
+
+    </div>
+
+
+    {/* SUB CONTAINER todolist */}
+    <div className="m-sub-container">   
+
+      <div className="m-sub-content">
+        <h2 className="m-sub-heading">6. Multi To-Do-Lists</h2>
+        <p className="m-sub-description">
+        Stay focused and productive with our Multi To-Do-Lists feature, and track progress with ease, 
+        enabling you to stay organized, motivated, and on track to achieve your goals.
+        </p>
+      </div> 
+
+      <div className='m-subimgcentercontainer'>
+      <div className="m-sub-image-container">
+            <div>
+                <img
+                src={todolist}
+                alt="Your Image"
+                className="image"
+                />
+            </div>
+        </div>   
+        </div> 
+
+    </div>
+
+
+    {/* SUB HEADING */}
+    <div className='m-subheading-container'>
+        <div className='m-subheading' style={{fontSize: '1.1rem', marginLeft: '8px'}}>Alright, you're good to go, have a good time exploring the platform :)</div>
+    </div>
+
+
+
+    {/* FOOTER */}
+    <div className="m-footer-container"> 
+
+    <div className='m-footer-content'>   
+         
+         <div style={{ padding: '0.5rem 1rem 0.25rem 1rem', }}> Great that you actually took the time and went through my project, <br/> I'm really glad. Thank you. 
+         </div>
+         
+        <div style={{ padding: '0rem 1rem 1rem 1rem', }}> 
+        <span style={{color: '#ccff01', }}>Feature under work:</span> Customizing end-to-end usage for specific users/organizations along with authentication and progress saving.
+         </div>
+         
+
+         <div className='m-foot-end'>Copyright ©️ {dayjs().format('YYYY')} Developed in a hurry by&nbsp;  
+         <a className='m-userhandle' href="https://ak14aman.vercel.app/">@ak14aman</a>  
         </div>
-      </div> */}
+        <div className='m-foot-end'>All Rights Reserved.</div>
+    </div>
 
     </div>
 
