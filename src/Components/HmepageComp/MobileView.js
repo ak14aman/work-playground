@@ -53,6 +53,11 @@ const MobileView = () => {
         To the section of people who don't give a sh*t (me included): <br/>
         You can always test your phone's limit by switching to desktop view, and if it works perfectly, drop me a text 
         "Fu*k you aman, my so-and-so phone {' >>> '} your dabba phone hahaha".
+        <br/>
+        <br/>
+        But SERIOUSLY, SWITCH TO DESKTOP please ;_;
+        <br/>
+        Meanwhile go through the introductory homepage.
         </p>
       </div>      
 
