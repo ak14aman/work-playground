@@ -11,6 +11,8 @@ import todolist from '../ImgAssets/todolist.png'
 import whiteboard from '../ImgAssets/whiteboard.png'
 import workflow from '../ImgAssets/workflow.png'
 
+import SouthIcon from '@mui/icons-material/South';
+
 const MobileView = () => {
   return (
     <>
@@ -54,7 +56,7 @@ const MobileView = () => {
       </div>      
 
 
-      <div style={{ padding: '10px', display: 'flex', justifyContent: 'center' }}>🡣</div> 
+      <div style={{ padding: '10px 0px 0px 0px', display: 'flex', justifyContent: 'center' }}> <SouthIcon/> </div> 
 
     </div>
 

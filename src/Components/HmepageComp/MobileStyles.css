@@ -64,7 +64,7 @@
 
 .m-hero-contenthead {
     margin: 0px;
-    padding: 0px;
+    padding: 0px 0px 10px 0px;
     display: flex;
     justify-content: center;
     /* align-items: center; */
@@ -173,7 +173,7 @@
 }
 
 .m-sub-description {
-    font-size: 0.7rem;
+    font-size: 0.8rem;
     margin: 2px;
     /* max-width: 600px; */
     font-family: 'Jost', sans-serif;
