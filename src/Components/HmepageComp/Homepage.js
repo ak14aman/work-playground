@@ -1,4 +1,5 @@
 import React from 'react'
+import dayjs from 'dayjs';
 import './HomeStyles.css'
 import playgroundimg from '../ImgAssets/playground.png'
 import calendar from '../ImgAssets/calendar.png'
@@ -32,9 +33,12 @@ const Homepage = () => {
     <div className="component-container">
       
       <div className="hero-content">
-        <h2 className="hero-heading">Welcome to Our Website</h2>
+        <h2 className="hero-heading">Hey there! Welcome to
+        <div style={{ color: '#613dc1'}}>WORK-PLAYGROUND.</div> 
+        </h2>
         <p className="hero-description">
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.
+        ➤ Your one stop solution for planning, organizing, and managing every aspect of your team's operations. <br/>
+        ➤ From streamlined project management to efficient resource allocation, this platform offers a single destination for all your organizational needs.
         </p>
       </div>
 
@@ -186,6 +190,17 @@ const Homepage = () => {
           Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.
         </p>
       </div>    
+
+    </div>
+
+
+    {/* FOOTER */}
+    <div className="footer-container">   
+         
+         <div> Great that you actually took the time and went through my project, I'm really glad. Thank you.</div>
+
+         <div>Copyright ©️ {dayjs().format('YYYY')} Developed in a hurry by <a href="https://ak14aman.vercel.app/" style={{color: '#fffff'}}>@ak14aman</a>  <br/> All Rights Reserved.</div>
+   
 
     </div>
 
