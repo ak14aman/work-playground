@@ -51,12 +51,13 @@ const MobileView = () => {
         <br/><br/>
 
         To the section of people who don't give a sh*t (me included): <br/>
-        You can always test your phone's limit by switching to desktop view, and if it works perfectly drop me a text "Fu*k you aman, my so-and-so phone {' >>> '} your dabba phone".
+        You can always test your phone's limit by switching to desktop view, and if it works perfectly, drop me a text 
+        "Fu*k you aman, my so-and-so phone {' >>> '} your dabba phone hahaha".
         </p>
       </div>      
 
 
-      <div style={{ padding: '10px 0px 0px 0px', display: 'flex', justifyContent: 'center' }}> <SouthIcon/> </div> 
+      <div style={{ padding: '35px 15px 20px 15px', display: 'flex', justifyContent: 'center' }}> <SouthIcon/> </div> 
 
     </div>
 
