@@ -141,7 +141,7 @@
 
 .sub-content {
     flex: 2;
-    padding: 2rem;
+    padding: 2rem 3rem 2rem 0rem;
     margin-left: auto;    
     /* padding-left: 5rem; */
     /* Adjust padding and other styles for the content area */
@@ -156,7 +156,7 @@
 
 .sub-description {
     font-size: 17px;
-    max-width: 600px;
+    /* max-width: 600px; */
     font-family: 'Jost', sans-serif;
     color: #02419f;
     /* Adjust description styles */
@@ -167,7 +167,7 @@
     /* flex: 2; */
     display: flex;
     flex-direction: column;
-    width: 40%;
+    width: 38%;
     gap: 2rem;
     /* padding-left: 200px; */
     /* margin-left: 20px;  */
@@ -191,10 +191,29 @@
 
 .footer-container {
     font-family: 'Jost', sans-serif;
+    font-size: 17px;
     background-color: #0a2751; /* Navbar background color */
-    color: #fff; /* Text color */
+    color: #d8d8d8; /* Text color */
     padding: 10px; /* Padding around navbar items */
+    display: flex; 
+    justify-content: center; /* Distribute items evenly along the main axis */
+    align-items: center;
+}
+
+.footer-content {
+    /* padding: 10px; */
     display: block; 
-    justify-content: left; /* Distribute items evenly along the main axis */
+    justify-content: center; /* Distribute items evenly along the main axis */
+    align-items: center;
+}
+
+.userhandle {
+    color: #ccff01;
+}
+
+.foot-end {
+    font-size: 13px;
+    display: flex;
+    justify-content: center;
     align-items: center;
 }
