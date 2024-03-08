@@ -15,12 +15,51 @@ const MobileView = () => {
   return (
     <>
       
-    {/* <div className='m-navbar'>
+    <div className='m-navbar'>
         <div className='m-ComponentDiv1'> Work-Playground </div>
         <div className='m-ComponentDiv2'>
                 <a href="https://ak14aman.vercel.app/" style={{color: '#ffff'}}>Who Me? 👀 </a>
             </div>
-    </div> */}
+    </div>
+
+
+    {/* SUB CONTAINER phone alert */}
+    <div className="m-sub-container">
+
+        <div className='m-subimgcentercontainer' style={{paddingTop: '3rem'}}>
+      <div className="m-sub-image-container">
+            <div>
+                <img
+                src={phonealert}
+                alt="Your Image"
+                className="image"
+                />
+            </div>
+        </div>   
+        </div>   
+
+      <div className="m-sub-content">
+
+        <div style={{ display: 'flex', justifyContent: 'center' }}>
+        <h2 className="m-sub-heading" style={{fontSize: '1.4rem'}}>Uh, Sorry mate :(</h2>
+        </div>
+
+        <p className="m-sub-description" style={{color: '#0a2751'}}>
+        This is a desktop heavy app, it just won't work properly on mobiles. So hop on to your pc and explore it seamlessly :)
+        <br/><br/>
+
+        To the section of people who don't give a sh*t (me included): <br/>
+        You can always test your phone's limit by switching to desktop view, and if it works perfectly drop me a text "Fu*k you aman, my so-and-so phone {' >>> '} your dabba phone".
+        </p>
+      </div>      
+
+
+      <div style={{ padding: '10px', display: 'flex', justifyContent: 'center' }}>🡣</div> 
+
+    </div>
+
+
+
 
       {/* HERO CONTAINER */}
 
