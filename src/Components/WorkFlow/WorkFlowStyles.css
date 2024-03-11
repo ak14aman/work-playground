@@ -40,6 +40,45 @@
     font-family: 'Jost', sans-serif;
     padding: 8px;
   }
+
+  .shine-container {
+    position: relative;
+  }
+  
+  .shine-text {
+    position: absolute;
+    font-family: 'Jost', sans-serif;
+    padding: 8px;
+    position: relative;
+    overflow: hidden;
+  }
+  
+  .shine-text::after {
+    content: '';
+    position: absolute;
+    top: -50%;
+    left: -50%;
+    width: 200%;
+    height: 200%;
+    background: rgba(255, 255, 255, 0.5);
+    transform: rotate(-45deg);
+    animation: shine-animation 2s linear infinite;
+  }
+  
+  @keyframes shine-animation {
+    0% {
+      transform: rotate(-45deg) translateX(-150%);
+    }
+    50% {
+      transform: rotate(45deg) translateX(150%);
+    }
+    100% {
+      transform: rotate(-45deg) translateX(-150%);
+    }
+  }
+  
+
+
   
   .no-tailwind { 
     all: unset; 

@@ -124,10 +124,13 @@ const NodeWorkFlow = () => {
 
 export default () => (
   <ReactFlowProvider>
-    <div className='divElement'>
-        How to use, you ask? <br></br>
-        Create a new node by dropping the connection line on the pane from those purple boxes, and go with the flow :)
+    <div className='shine-container'>
+      <div className='shine-text'>
+          How to use, you ask? <br></br>
+          Create a new node by dropping the connection line on the pane from those purple boxes, and go with the flow :)
+      </div>
     </div>
+    
     <NodeWorkFlow/>
   </ReactFlowProvider>
 );
