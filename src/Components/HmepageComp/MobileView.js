@@ -4,7 +4,7 @@ import dayjs from 'dayjs';
 
 import playgroundimg from '../ImgAssets/playground.png'
 import calendar from '../ImgAssets/calendar.png'
-import phonealert from '../ImgAssets/phonealert.png'
+import phonetodesktopalert from '../ImgAssets/phonetodesktopalert.png'
 import taskmanagement from '../ImgAssets/taskmanagement.png'
 import teambuilder from '../ImgAssets/teambuilder.png'
 import todolist from '../ImgAssets/todolist.png'
@@ -32,7 +32,7 @@ const MobileView = () => {
       <div className="m-sub-image-container">
             <div>
                 <img
-                src={phonealert}
+                src={phonetodesktopalert}
                 alt="Your Image"
                 className="image"
                 />
@@ -43,11 +43,11 @@ const MobileView = () => {
       <div className="m-sub-content">
 
         <div style={{ display: 'flex', justifyContent: 'center' }}>
-        <h2 className="m-sub-heading" style={{fontSize: '1.4rem'}}>Uh, Sorry mate :(</h2>
+        <h2 className="m-sub-heading" style={{fontSize: '1.4rem'}}>Switch to Desktop</h2>
         </div>
 
         <p className="m-sub-description" style={{color: '#0a2751'}}>
-        This is a desktop heavy app, it just won't work properly on mobiles. So hop on to your pc and explore it seamlessly :)
+        This is a desktop-oriented app, it just won't work properly on mobiles. So hop on to your pc <b>to access the full site</b> :)
         <br/><br/>
 
         To the section of people who don't give a sh*t (me included): <br/>
@@ -57,7 +57,7 @@ const MobileView = () => {
         <br/>
         But SERIOUSLY, SWITCH TO DESKTOP please ;_;
         <br/>
-        Meanwhile go through the introductory homepage.
+        Meanwhile go through the basic introductory homepage.
         </p>
       </div>      
 
@@ -265,7 +265,12 @@ const MobileView = () => {
 
     {/* SUB HEADING */}
     <div className='m-subheading-container'>
-        <div className='m-subheading' style={{fontSize: '1.1rem', marginLeft: '8px'}}>Alright, you're good to go, have a good time exploring the platform :)</div>
+        <div className='m-subheading' style={{fontSize: '1.1rem', marginLeft: '8px'}}>
+          Alright, you're good to go, have a good time exploring the platform :)
+          <br/>
+          <p style={{fontSize: '0.8rem', textTransform: 'uppercase', marginTop: '1.2rem', marginBottom: '0px', }}>Switch to Desktop to access full website.</p>
+        </div>
+        
     </div>
 
 

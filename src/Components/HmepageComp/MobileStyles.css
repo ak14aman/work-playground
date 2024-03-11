@@ -194,7 +194,7 @@
     align-items: center;
     justify-content: center;
     /* flex-direction: column; */
-    width: 38%;
+    /* width: 38%; */
     gap: 2rem;
     /* padding-left: 200px; */
     /* margin-left: 20px;  */
@@ -209,7 +209,7 @@
 }
 
 .m-sub-image-container > div > img{
-    width: 12rem;
+    width: 13rem;
     align-items: end;
     justify-content: end;
     transition: all 0.m-3s ease;
